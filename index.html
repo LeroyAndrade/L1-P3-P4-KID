@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html><!--iPhone X 375x812-->
+<head>
+<style>
+body{
+  padding:1em;
+  background: rgb(154,191,255);
+}
+b{
+  font-size:.8em;
+}
+#beginScherm{
+font-size:3em;
+
+}
+.change, #luve, #menu{
+display:none;
+}
+.changKeyframe0{
+position:absolute;
+-webkit-animation:linear infinite alternate;
+-webkit-animation-name: run0;
+-webkit-animation-duration: 1s;
+  -webkit-animation:run0 .6s ease-in 1s both;
+} @-webkit-keyframes run0 {
+    0% { right: 0%;}
+    50%{ right: 60%;}
+    100%{ right: 50%;}100%{ top: 0%;}
+}
+
+.changKeyframe1{
+position:absolute;
+-webkit-animation:linear infinite alternate;
+-webkit-animation-name: run1;
+-webkit-animation-duration: 1s;
+  -webkit-animation:run1 1.6s ease-in 1s both;
+}  @-webkit-keyframes run1 {
+      0% { right: 0%;}
+      50%{ right: 45%;}
+      100%{ right: 35%;}100%{ top: 0%;}
+  }
+
+.changKeyframe2{
+position:absolute;
+-webkit-animation:linear infinite alternate;
+-webkit-animation-name: run2;
+-webkit-animation-duration: 1s;
+  -webkit-animation:run2 1.6s ease-in 1.3s both;
+} @-webkit-keyframes run2 {
+    0% { right: 0%;}
+    50%{ right: 55%;}
+    100%{ right: 43%;}
+    100%{ top: 0%;}
+
+}
+#beginScherm{
+margin-top:40vh;
+margin-left:2vw;
+}
+
+.first{
+  margin-left: 50px;
+}
+
+ul{
+  width: 400px;
+  background-color:yellow;
+  height:20px;
+}
+
+#menu{
+  margin-top:10vh;
+  display:grid;
+  display:none;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+font-size:2.6em;
+}
+#menu > article{
+  margin-left:10vw;
+  display:grid;
+}
+input[type="button"]{
+background-color:#fff;
+padding:3px;
+color:green;
+border-radius: 45px;
+width:120px;
+font-size:1em;
+}
+</style>
+</head>
+<body onload="beginScherm1()">
+<section id="beginScherm">
+  <b id="registreer">Registreer en pak het leven weer op&#33;</b><br/>
+  <article class="first change changKeyframe0"><br/>Love</article>
+  <article class="second change changKeyframe1"><br/>&nbsp;Live</article>
+
+  <p class="third change changKeyframe2"><br/>Life </p>
+</section>
+
+<section id="menu">
+
+  <article>Wilt u inloggen</article>
+  <article><a href="#" target="_blank"><input type="button" value="Klik dan hier"></a></article>
+
+  <article>Wilt u registreren</article>
+  <article><a href="#" target="_blank"><input type="button" value="Klik dan hier"></a></article>
+
+  <article>Credentials vergeten?</article>
+  <article><a href="#" target="_blank"><input type="button" value="Klik dan hier"></a></article>
+</section>
+
+<script src="js/javaScript.js"></script>
+</body>
+</html>
