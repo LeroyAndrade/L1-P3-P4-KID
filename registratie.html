@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html><!--iPhone X 375x812-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Leroy Andrade">
+  <meta name="content" content="">
+  <meta name="description" content="">
+  <meta name="keywords" content="Life,live,love">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+<script src="./js/ww.js"></script>
+  <style>
+    body{
+      padding:1em;
+      background: rgb(154,191,255);
+    }
+    #logo{
+      margin: 2vh 0 10vw 0;
+    }
+    #menu{
+      margin-top:10vh;
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10px;
+    font-size:2.6em;
+    }
+    #menu > article{
+    margin-left:10vw;
+    display:grid;
+    }
+    input[type="email"]{
+    background-color:#fff;
+    padding:3px;
+    color:rgb(0,220,17);
+    border-radius: 45px;
+    width:200px;
+    font-size:1em;
+    text-align:center;
+    }
+    input[type="text"]#verstuur{
+    background-color:#fff;
+    padding:3px;
+    color:rgb(0,220,17);
+    border-radius: 45px;
+    width:100px;
+    font-size:1em;
+    text-align:center;
+    }
+    #verstuurAllign{
+      margin-top:5vh;
+      margin-left:13vw;
+    }
+    #menuOpvraag{
+      margin-left:10vw;
+    }
+
+    #mnu{
+      margin-top:6vh;
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10px;
+    font-size:1.5em;
+    }
+    #menu0 > article{
+      display:grid;
+    }
+
+    input[type="button"]#log{
+    background-color:#fff;
+    padding:3px;
+    color:rgb(0,220,17);
+    border-radius: 45px;
+    width:150px;
+      font-size:1em;
+    }
+    input[type="submit"]{
+      background-color:#fff;
+      padding:3px;
+      color:rgb(0,220,17);
+      border-radius: 45px;
+      width:100px;
+      font-size:1em;
+      text-align:center;
+    }
+
+    input[type="password"]{
+      background-color:#fff;
+      padding:3px;
+      color:rgb(0,220,17);
+      border-radius: 45px;
+      width:200px;
+      font-size:1em;
+      text-align:center;
+    }
+
+    input[type="checkbox"]{
+      background-color:#fff;
+      padding:3em;
+      color:rgb(0,220,17);
+      border-radius: 45px;
+      width:2000px;
+      font-size:1em;
+      text-align:center;
+      border-radius:45px;
+    }
+    #xy{
+      display:flex;
+    }
+    input#man, input#vrouw, input#anders{
+      display:flex;
+      width: 40px;
+      height: 40px;
+      content:"man";
+    }
+    div {
+        margin-bottom: 1em;
+    }
+
+    .figure {
+        display: inline-block;
+    }
+
+.ruimte{
+  margin-left:30px;
+}
+
+    </style>
+</head>
+  <body>
+
+
+    <section id="logo">
+      <img src="./splash/luv5.svg" alt="">
+    </section>
+<form action="credentials-opgevraagd.html" method="GET" id="verzamel">
+  <!--method is POST in alle gevallen waar data verbind met de DB, maargoed-->
+    <section id="menuOpvraag">
+      <p><b>Registratie</b></p>
+      <p><b>Login</b></p>
+
+      <p>
+        <label for="emailId">Email adres<br/><input id="emailId"type="email" placeholder="PietjePuk@Hotmail.NL"
+        input pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-z]{2,4}$" value="PietjePuk@Hotmail.NL"
+         required>
+      </label>
+      </p>
+
+      <label>Geslacht</label>
+      <span id="xy">
+      <label for="">man<input name="man" id="man" type="checkbox" value="man"></label>
+      <label for=""class="ruimte">vrouw<input name="vrouw" id="vrouw" type="checkbox" value="vrouw"></label>
+      <label for=""class="ruimte">anders<input name="anders" id="anders" type="checkbox" value="anders"></label>
+        </span>
+
+      <p><!--
+        aacaafAB1+
+        -->
+    <label for="wachtwoord">Wachtwoord<br/><input id="password" type="password"
+      input pattern="^[a-z]{6}[A-Z]{2}[0-9][._%+-]{1}$"
+      oninvalid="alert('2 hoofdletter\n 6 kleine letters\n 1 cijfer\n en één volgende character: ._%+-');" required
+      placeholder="aacaafAB1+"><br/>
+    </label>
+
+      </p>
+
+      <p>
+        <label for="wachtwoord">Wachtwoord &#40;opnieuw bevest&#41;<input id="wachtwoord_bevestig" type="password"
+          input pattern="^[a-z]{6}[A-Z]{2}[0-9][._%+-]{1}$"
+          oninvalid="alert('2 hoofdletter\n 6 kleine letters\n 1 cijfer\n en één volgende character: ._%+-');" required
+          placeholder="aacaafAB1+."><br/>
+        </label>
+      </p>
+<p>
+
+
+
+
+<div>
+    Strength:
+    <div class="figure" id="strength_human">Score1</div>
+    <div class="figure" id="strength_score">Score1.1</div>
+</div>
+</p>
+
+
+      <p id="verstuurAllign"><input type="submit" value="Verstuur" id="verstuur"></p>
+    </section>
+
+    <section id="mnu">
+      <article>Wilt u inloggen</article>
+      <article><a href="#" target="_blank"><input type="button" id="log" value="Klik dan hier"></a></article>
+
+  </body>
+</html>

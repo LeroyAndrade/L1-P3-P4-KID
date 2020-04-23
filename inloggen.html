@@ -1,0 +1,141 @@
+<?php
+
+session
+
+<!DOCTYPE html>
+<html><!--iPhone X 375x812-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Leroy Andrade">
+  <meta name="content" content="">
+  <meta name="description" content="">
+  <meta name="keywords" content="Life,live,love">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body{
+      padding:1em;
+      background: rgb(154,191,255);
+    }
+    #logo{
+      margin: 2vh 0 10vw 0;
+    }
+    #menu{
+      margin-top:10vh;
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10px;
+    font-size:2.6em;
+    }
+    #menu > article{
+    margin-left:10vw;
+    display:grid;
+    }
+    input[type="email"]{
+    background-color:#fff;
+    padding:3px;
+    color:rgb(0,220,17);
+    border-radius: 45px;
+    width:200px;
+    font-size:1em;
+    text-align:center;
+    }
+    input[type="text"]#verstuur{
+    background-color:#fff;
+    padding:3px;
+    color:rgb(0,220,17);
+    border-radius: 45px;
+    width:100px;
+    font-size:1em;
+    text-align:center;
+    }
+    #verstuurAllign{
+      margin-top:5vh;
+      margin-left:13vw;
+    }
+    #menuOpvraag{
+      margin-left:10vw;
+    }
+
+    #mnu{
+      margin-top:6vh;
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10px;
+    font-size:1.5em;
+    }
+    #menu0 > article{
+      display:grid;
+    }
+
+    input[type="button"]#log{
+    background-color:#fff;
+    padding:3px;
+    color:rgb(0,220,17);
+    border-radius: 45px;
+    width:150px;
+      font-size:1em;
+    }
+    input[type="submit"]{
+      background-color:#fff;
+      padding:3px;
+      color:rgb(0,220,17);
+      border-radius: 45px;
+      width:100px;
+      font-size:1em;
+      text-align:center;
+    }
+
+    input[type="password"]{
+      background-color:#fff;
+      padding:3px;
+      color:rgb(0,220,17);
+      border-radius: 45px;
+      width:200px;
+      font-size:1em;
+      text-align:center;
+    }
+    </style>
+</head>
+  <body>
+
+
+    <section id="logo">
+      <img src="./splash/luv5.svg" alt="">
+    </section>
+<form action="credentials-opgevraagd.html" method="GET" id="verzamel">
+  <!--method is POST in alle gevallen waar data verbind met de DB, maargoed-->
+    <section id="menuOpvraag">
+      <p><b>Credentials opvragen</b></p>
+      <p><b>Login</b></p>
+
+      <p>
+        <label for="emailId">Email adres<br/><input id="emailId"type="email" placeholder="PietjePuk@Hotmail.NL"
+        input pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-z]{2,4}$" value="PietjePuk@Hotmail.NL"
+         required>
+      </label>
+      </p>
+
+      <p><!--
+        Ll1.
+        aacaafAB1+
+        -->
+        <label for="wachtwoord">Wachtwoord<input id="wachtwoord" type="password"
+      input pattern="^[a-z]{6}[A-Z]{2}[0-9][._%+-]{1}$"
+      oninvalid="alert('2 hoofdletter\n 6 kleine letters\n 1 cijfer\n en één volgende character: ._%+-');" required
+      placeholder="aacaafAB1+."><br/>
+    </label>
+      </p>
+
+
+
+      <p id="verstuurAllign"><input type="submit" value="asd" id="verstuur"></p>
+    </section>
+
+    <section id="mnu">
+      <article>Wilt u inloggen</article>
+      <article><a href="#" target="_blank"><input type="button" id="log" value="Klik dan hier"></a></article>
+    </section>
+
+  </body>
+</html>
